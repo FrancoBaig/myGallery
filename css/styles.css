@@ -3,30 +3,33 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 .container {
-  width: 90%;
+  width: 61%;
   margin: 0 auto;
-  background: lightyellow;
 }
 .container .profile-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0;
+  padding: 3.75rem 0;
 }
-.container .profile-header img {
-  max-width: 156px;
-  max-height: 156px;
-  border-radius: 16px;
+.container .profile-header .profile-photo {
+  max-width: 9.75rem;
+  max-height: 9.75rem;
+  border-radius: 1rem;
 }
 .container .profile-header #profile-name {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
-  margin-top: 16px;
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 0.625rem;
 }
 .container .profile-header #description {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
   color: #A9A9A9;
   margin-bottom: 1.25rem;
@@ -54,6 +57,91 @@
 .container .profile-header .stats .card .text {
   color: #BDBDBD;
   font-size: 0.875rem;
+}
+.container .gallery {
+  margin-top: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.875rem;
+}
+.container .gallery .caja {
+  width: 100%;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.container .gallery .gallery_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+}
+.container .gallery .gallery_img:nth-child(2), .container .gallery .gallery_img:nth-child(3) {
+  grid-column: span 2;
+}
+.container .gallery .gallery_img:nth-child(4) {
+  grid-row: span 2;
+}
+.container .footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 170px;
+  padding-bottom: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: #B9BDCF;
+}
+.container .footer a {
+  text-underline-offset: 3px;
+  color: #4E5150;
+}
+
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991.98px) {
+  .container {
+    width: 80%;
+  }
+  .container .gallery {
+    gap: 0.875rem;
+  }
+}
+@media (max-width: 575.98px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 95%;
+  }
+  .container .profile-header {
+    padding: 2.8rem 0;
+  }
+  .container .profile-header .profile-photo {
+    width: 7.25rem;
+    height: 7.25rem;
+  }
+  .container .profile-header #profile-name {
+    font-size: 1rem;
+  }
+  .container .profile-header .stats {
+    gap: 1rem;
+  }
+  .container .profile-header .stats .card {
+    width: 82px;
+    height: 50px;
+  }
+  .container .profile-header .stats .card .number {
+    font-size: 0.875rem;
+  }
+  .container .gallery {
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
