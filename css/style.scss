@@ -90,8 +90,7 @@ html{
             border-radius: 0.75rem;
 
             &:nth-child(2),
-            &:nth-child(3),
-            {
+            &:nth-child(3) {
                 grid-column: span 2;
             }
 
@@ -114,12 +113,10 @@ html{
         a {
             text-underline-offset: 3px;
             color: #4E5150;
+            padding: 0 3px;
         }
     }
-
 }
-
-
 
 
 // Large devices (desktops, less than 1200px)
@@ -150,7 +147,7 @@ html{
         width: 95%; 
 
         .profile-header{ 
-            padding: 2.8rem 0;
+            padding: 2rem 0;
 
             .profile-photo{
                 width: 7.25rem;
@@ -176,6 +173,17 @@ html{
 
         .gallery {
             gap: 10px;
+        }
+
+        .footer{
+            height: 100px;
+            padding-bottom: 0.625rem;
+            color: #B9BDCF;
+    
+            a {
+                text-underline-offset: 3px;
+                color: #4E5150;
+            }
         }
     }
 }

@@ -96,6 +96,7 @@ html {
 .container .footer a {
   text-underline-offset: 3px;
   color: #4E5150;
+  padding: 0 3px;
 }
 
 @media (max-width: 1199.98px) {
@@ -120,7 +121,7 @@ html {
     width: 95%;
   }
   .container .profile-header {
-    padding: 2.8rem 0;
+    padding: 2rem 0;
   }
   .container .profile-header .profile-photo {
     width: 7.25rem;
@@ -141,6 +142,15 @@ html {
   }
   .container .gallery {
     gap: 10px;
+  }
+  .container .footer {
+    height: 100px;
+    padding-bottom: 0.625rem;
+    color: #B9BDCF;
+  }
+  .container .footer a {
+    text-underline-offset: 3px;
+    color: #4E5150;
   }
 }
 
