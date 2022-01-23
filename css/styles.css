@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background: lightyellow;
+}
+.container .profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+.container .profile-header img {
+  max-width: 156px;
+  max-height: 156px;
+  border-radius: 16px;
+}
+.container .profile-header #profile-name {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.container .profile-header #description {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #A9A9A9;
+  margin-bottom: 1.25rem;
+}
+.container .profile-header .stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.container .profile-header .stats .card {
+  width: 6.25rem;
+  height: 4.19rem;
+  border-radius: 0.75rem;
+  background: #E5E5E5;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .profile-header .stats .card .number {
+  color: #4E5150;
+  font-size: 1.13rem;
+}
+.container .profile-header .stats .card .text {
+  color: #BDBDBD;
+  font-size: 0.875rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
